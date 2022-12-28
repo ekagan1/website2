@@ -1,0 +1,35 @@
+.clockfile {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --primary-color2: #ff0080;
+    --secondary-color2: #0096FF;
+}
+
+html {
+    transition: all 0.5s ease-in;
+    background-image: linear-gradient(to bottom right, white, grey);
+    background-size: cover;
+}
+
+html.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+
+html.dark {
+    transition: all 0.5s ease-in;
+    background-image: none;
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+
+.faqfile.dark {
+    transition: all 0.5s ease-in;
+    background-color: #111;
+    color: var(--secondary-color2);
+}

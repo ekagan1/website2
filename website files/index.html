@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="clock.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="toDark.css" />
+    <title>time&date</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popupText">
+        <button class="pclose1">&times;</button>
+        <h2>Welcome to WhereAmI.mcon</h2>
+        <p>
+            This website finds your location and displays the city, state, timezone, time, and date<br> Please accept the prompt from your browser to allow location services.
+        </p>
+        <a class="pclose2">Let's Go</a>
+      </div>
+      <div class="popupBG"></div>
+    </div>
+    <div class="main">
+      <div class="navfile">
+        <nav class="active" id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#city">Location</a></li>
+            <li><a href="#faqS">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="icon" id="navtoggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </button>
+        </nav>
+      </div>
+      <div class="text">
+        <h1 id="city">location</h1>
+        <h1 id="region">region</h1>
+        <h3 id="timezone">timezone</h3>
+        <h4 id="map1"></h4>
+        <div id="map"></div>
+      </div>
+      <div class="clockfile">
+        <button class="toggle">Dark mode</button>
+        <div class="clock-container">
+          <div class="clock">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+            <div class="center-point"></div>
+          </div>
+
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
+      </div>
+
+      <div class="buttonfile">
+        <button class="ripple buttonForInfo" id="buttonInfo">more info</button>
+        <div class='info' id="info">
+          <table>
+            <tr>
+              <th>More Info</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>City:</td>
+              <td id="tCity">error</td>
+            </tr>
+            <tr>
+              <td>Country:</td>
+              <td id="tCountry">error</td>
+            </tr>
+            <tr>
+              <td>Host Name:</td>
+              <td id="tHostname">error</td>
+            </tr>
+            <tr>
+              <td>IP:</td>
+              <td id="tIp">error</td>
+            </tr>
+            <tr>
+              <td>Location:</td>
+              <td id="tLoc">error</td>
+            </tr>
+            <tr>
+              <td>Postal code:</td>
+              <td id="tPostal">error</td>
+            </tr>
+            <tr>
+              <td>Region:</td>
+              <td id="tRegion">error</td>
+            </tr>
+            <tr>
+              <td>Time Zone:</td>
+              <td id="tTimezone">error</td>
+            </tr>
+            </table>
+        </div>
+      </div>
+      <div class="faqfile" id="faqS">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-container">
+          <div class="faq active">
+            <h3 class="faq-title">
+              What is WhereAmI.mcon?
+            </h3>
+
+            <p class="faq-text">
+              This website gets ur location and displays the city, state, timezone, time, and date.
+            </p>
+
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down" id="faqOpenButton"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq">
+            <h3 class="faq-title">
+              Why was this website created?
+            </h3>
+            <p class="faq-text">
+              This website is a project for my web development class at Lander College for Men.
+            </p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq">
+            <h3 class="faq-title">
+              Who created this website?
+            </h3>
+            <p class="faq-text">
+              This website was Created by Elazar Kagan, if you have any questions you can contact him at ekagan@student.touro.edu.
+            </p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq">
+            <h3 class="faq-title">
+              How does this website work?
+            </h3>
+            <p class="faq-text">
+              You are welcome to check out the source code on my github page.
+            </p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq" id="imgs">
+            <h3 class="faq-title">
+              Here is a section that has a list of 5 images.
+            </h3>
+            <p class="faq-text">
+              <li><img src="img1.webp" alt="lines of code"></li>
+              <li><img src="img2.jpg" alt="person with neon lights and shadows"></li>
+              <li><img src="img3.jpg" alt="an astronaut chilling on the moon with earth in the background"></li>
+              <li><img src="img4.webp" alt="a panda wearing sunglasses"></li>
+              <li><img src="img5.jpg" alt="a futuristic tornado made out of lightning"></li>
+            </p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src="faq.js"></script>
+    <script src="clock.js"></script>
+    <script src="nav.js"></script>
+    <script src="button.js"></script>
+    <script src="toDark.js"></script> 
+    <script src="main.js"></script>
+    <script src="getLocation.js"></script>
+    <script src="text.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbXAn2TrbMzutzSbRYulhUlhEX84tohTE&callback=initMap">
+    </script>
+  </body>
+</html>

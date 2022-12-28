@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+/* css for animated clock */
+.clockfile {
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 800px;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  left: 150px;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: fixed;
+  top: 25px;
+  right: 60px;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.clock {
+  position: relative;
+  width: 500px;
+  height: 690px;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 240px;
+  width: 5px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 350px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 350px;
+  background-color: #ff0080;
+}
+
+.needle.second.dark {
+  background-color: #0096FF;
+}
+
+.center-point {
+  background-color: #ff0080;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point.dark {
+  background-color: #0096FF;
+}
+
+.center-point::after {
+  content: '';
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 60px;
+}
+
+.date {
+  color: --primary-color;
+  font-size: 44px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.date .circle {
+  background-color: var(--primary-color2);
+  color: var(--primary-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 32px;
+  position: relative;
+  top: -5px;
+}
+
+.date.dark .circle {
+  background-color: var(--secondary-color2);
+  color: var(--primary-color);
+}
